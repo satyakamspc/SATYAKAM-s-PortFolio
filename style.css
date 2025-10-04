@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    height:150vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:1.5vw;
+    background-color: #42045d;
+    background-repeat: no-repeat;
+}
+nav {
+    margin-top: 15px;
+    padding: 2vw;
+    width: 93vw;
+    justify-self: center;
+    background:linear-gradient(to right bottom,#373280,#470365);
+    color: silver;
+    display: flex;
+    justify-content: space-between;
+    border-radius:25px;
+    box-shadow: 0px 0px 4px rgb(181, 181, 181);
+    backdrop-filter: blur(20px) contrast(2.5) brightness(10);
+}
+.websiteName
+{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2vw;
+}
+.rightSide {
+    width: 30%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2vw;
+}
+.intro
+{
+    display: flex;
+    padding:2vw;
+    width:93vw;
+    height:27vw;
+    border-radius: 25px;
+    align-items: start;
+    background: linear-gradient(to left bottom,#363561,#62058a);
+    box-shadow: 0px 0px 4px rgb(176, 176, 176);
+    backdrop-filter: blur(20px) contrast(2.5) brightness(10);
+    justify-content: space-around;
+}
+.introcomment{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+    font-size:3.2vw;
+    text-align: start;
+    color: rgb(74, 165, 255);
+    row-gap: 3vw;
+}
+img{
+    width:25vw;
+    height:25vw;
+    border-radius: 40px;
+}
+.name
+{
+    color: burlywood;
+}
+.carrier
+{
+    color: burlywood;
+}
