@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,7 @@ body
 }
 nav {
     margin-top: 15px;
-    padding: 2vw;
+    padding: 25px;
     width: 93vw;
     justify-self: center;
     background:linear-gradient(to right bottom,#373280,#470365);
@@ -26,11 +26,13 @@ nav {
     border-radius:25px;
     box-shadow: 0px 0px 4px rgb(181, 181, 181);
     backdrop-filter: blur(20px) contrast(2.5) brightness(10);
+    /* border: 5px solid;
+    border-image: linear-gradient(to left top,red,purple) 1 0 0 0;incompatible */
 }
 .websiteName
 {
     font-family: "Ubuntu", sans-serif;
-    font-size: 2vw;
+    font-size: 38.6px;
 }
 .rightSide {
     width: 30%;
@@ -41,12 +43,29 @@ nav {
     font-family: "Ubuntu", sans-serif;
     font-size: 1.2vw;
 }
+.rightSide a
+{
+    color: silver;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+    padding:0.8vw;
+}
+.rightSide a:hover
+{
+    padding:0.8vw;
+    background:linear-gradient(to left bottom,#363561,#62058a);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px grey;
+    transform: scale(1.1);
+    color: aquamarine;
+}
 .intro
 {
     display: flex;
     padding:2vw;
-    width:93vw;
-    height:27vw;
+    width:92vw;
+    height:25vw;
     border-radius: 25px;
     align-items: start;
     background: linear-gradient(to left bottom,#363561,#62058a);
@@ -62,7 +81,7 @@ nav {
     font-weight: 500;
     font-size:3.2vw;
     text-align: start;
-    color: rgb(74, 165, 255);
+    color: #04a9a4;
     row-gap: 3vw;
 }
 img{
@@ -70,11 +89,41 @@ img{
     height:25vw;
     border-radius: 40px;
 }
-.name
+.name,.carrier
 {
     color: burlywood;
 }
-.carrier
-{
-    color: burlywood;
+@media(max-width:900px){
+    nav{
+        min-width:300px;
+        min-height: 50px;
+    }
+    .websiteName
+    {
+        font-size: 27px;
+        text-wrap:wrap;
+    }
+    .rightSide
+    {
+        flex-wrap: wrap;
+        flex:0 0 45%;
+        font-size: 19.7px;
+    }
+    .intro
+    {
+        align-items: center;
+        flex-wrap: wrap;
+        flex:0 0 65rem;
+        min-width:300px;
+        min-height: 70px;
+    }
+    .introcomment{      
+        text-align: center;
+        font-size: 60px;
+        width: auto;
+    }
+    img{
+        width:350px;
+        height:350px;
+    }
 }
