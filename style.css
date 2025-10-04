@@ -96,8 +96,6 @@ img{
 }
 @media(max-width:1118px){
     nav{
-        border:3px solid;
-        border-image: linear-gradient(to left top,red,green,blue) 1;
         border-radius:0;
         min-width:auto;
         min-height: 50px;
@@ -117,7 +115,7 @@ img{
     {
         align-items: center;
         flex-wrap: wrap;
-        flex:0 0 65rem;
+        flex:0 0 70rem;
         min-width:300px;
         min-height: 70px;
     }
