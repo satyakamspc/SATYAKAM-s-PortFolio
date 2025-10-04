@@ -93,7 +93,7 @@ img{
 {
     color: burlywood;
 }
-@media(max-width:900px){
+@media(max-width:1118px){
     nav{
         min-width:300px;
         min-height: 50px;
