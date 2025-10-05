@@ -124,44 +124,45 @@ img {
 .SkillSection {
     display: flex;
     padding: 1.5vw;
-    justify-content: center;
-    align-items: center;
     background: hsl(240, 3%, 15%);
-    column-gap: 25px;
-    width: 90vw;
+    row-gap: 20px;
+    flex-direction:column;
+    width: 92vw;
     height: 28vw;
 }
 
 .SkillSection .skls {
     display: flex;
-    position: relative;
     padding: 1vw;
     flex-direction: column;
     align-items: center;
     border-radius:25px;
-    width: 30vw;
-    height: 22vw;
-    box-shadow: 0px 0px 4px rgb(158, 158, 158);
-
 }
 
 .SkillSection img {
-    position:absolute;
-    top: -30px;
     width: 40px;
     height: 40px;
 }
-
+.lngsection
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .name,
 .carrier {
     color: rgb(136, 107, 69);
 }
-
-.Skills,.head{
+.Skills,.head,.language{
     font-size: 28px;
     font-family: "Exo 2", sans-serif;
     font-weight:650;
     color: rgb(178, 183, 188);
+}
+.language
+{
+    font-size: 24px;
 }
 
 @media(max-width:900px) {
@@ -184,7 +185,7 @@ img {
     .intro {
         align-items: center;
         flex-wrap: wrap;
-        flex: 0 0 50rem;
+        flex: 0 0 45rem;
         width: 87vw;
         height: auto;
     }
@@ -201,7 +202,7 @@ img {
     }
     .SkillHead
     {
-        width:86vw;
+        width:92vw;
         height:auto;
         row-gap: 30px;
         display:flex;
@@ -211,16 +212,12 @@ img {
     .SkillSection
     {
         flex-direction: column;
-        flex-wrap: wrap;
         width:70vw;
         height:auto;
-        flex-wrap: wrap;
-        row-gap: 40px;
+        row-gap: 30px;
     }
     .SkillSection .skls
     {
         padding: auto;
-        width: 30vh;
-        height:40vh;
     }
 }
