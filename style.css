@@ -1,131 +1,211 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
-body
-{
-    height:150vw;
+
+body {
+    height: 150vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap:20px;
-    background-color: #42045d;
+    row-gap: 20px;
+    background-color: black;
     background-repeat: no-repeat;
 }
+
 nav {
     margin-top: 15px;
     padding: 25px;
     width: 93vw;
     justify-self: center;
-    background:linear-gradient(to right bottom,#373280,#470365);
+    background: hsl(240, 3%, 15%);
     color: silver;
     display: flex;
     justify-content: space-between;
-    border-radius:25px;
+    border-radius: 25px;
     box-shadow: 0px 0px 4px rgb(181, 181, 181);
     backdrop-filter: blur(20px) contrast(2.5) brightness(10);
     /* border: 5px solid;
     border-image: linear-gradient(to left top,red,purple) 1 0 0 0;incompatible */
 }
-.websiteName
-{
+
+.websiteName {
     font-family: "Ubuntu", sans-serif;
     font-size: 38.6px;
 }
+
 .rightSide {
     width: 30%;
     list-style: none;
     display: flex;
     justify-content: space-around;
-    align-items:center;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 1.2vw;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Exo 2", sans-serif;
 }
-.rightSide a
-{
+
+.rightSide a {
     color: silver;
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s ease-out;
-    padding:0.8vw;
+    padding: 0.8vw;
 }
-.rightSide a:hover
-{
-    padding:0.8vw;
-    background:linear-gradient(to left bottom,#363561,#62058a);
+
+.rightSide a:hover {
+    transform: scale(1.5vw);
+    background: hsl(0, 0%, 20%);
     border-radius: 5px;
     box-shadow: 0px 0px 5px grey;
     transform: scale(1.1);
-    color: aquamarine;
+    color: rgb(202, 202, 202);
 }
-.intro
-{
+
+.intro {
     display: flex;
-    row-gap: 20px;
-    padding:2vw;
-    width:92vw;
-    height:25vw;
+    row-gap: 17px;
+    padding: 2vw;
+    width: 92vw;
+    height: 26vw;
     border-radius: 25px;
     align-items: start;
-    background: linear-gradient(to left bottom,#363561,#62058a);
+    background: hsl(240, 3%, 15%);
     box-shadow: 0px 0px 4px rgb(176, 176, 176);
-    backdrop-filter: blur(20px) contrast(2.5) brightness(10);
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-.introcomment{
-    display:flex;
-    flex-direction:column;
-    width:50%;
+
+.introcomment {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     font-family: "Exo 2", sans-serif;
     font-weight: 500;
-    font-size:3.2vw;
+    font-size: 3.2vw;
     text-align: start;
-    color: #04a9a4;
+    color: hsl(240, 1%, 62%);
     row-gap: 3vw;
 }
-img{
-    width:25vw;
-    height:25vw;
+
+img {
+    width: 25vw;
+    height: 25vw;
     border-radius: 40px;
 }
-.name,.carrier
-{
-    color: burlywood;
+
+.SkillHead {
+    padding: 2vw;
+    border-radius: 25px;
+    width: 92vw;
+    height: 29vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 12px;
+    align-items: center;
+    background: hsl(240, 3%, 15%);
+    box-shadow: 0px 0px 4px rgb(176, 176, 176);
 }
-@media(max-width:1118px){
-    nav{
-        border-radius:0;
-        min-width:auto;
-        min-height: 50px;
+
+.SkillSection {
+    display: flex;
+    padding: 1.5vw;
+    justify-content: center;
+    align-items: center;
+    background: hsl(240, 3%, 15%);
+    column-gap: 25px;
+    width: 90vw;
+    height: 28vw;
+}
+
+.SkillSection .skls {
+    display: flex;
+    position: relative;
+    padding: 1vw;
+    flex-direction: column;
+    align-items: center;
+    border-radius:25px;
+    width: 30vw;
+    height: 22vw;
+    box-shadow: 0px 0px 4px rgb(158, 158, 158);
+
+}
+
+.SkillSection img {
+    position:absolute;
+    top: -30px;
+    width: 40px;
+    height: 40px;
+}
+
+.name,
+.carrier {
+    color: rgb(136, 107, 69);
+}
+
+.Skills {
+    font-size: 28px;
+    font-family: "Exo 2", sans-serif;
+    font-weight:650;
+    color: rgb(178, 183, 188);
+}
+
+@media(max-width:900px) {
+    nav {
+        width: 86vw;
+        height: 50px;
     }
-    .websiteName
-    {
+
+    .websiteName {
         font-size: 27px;
-        text-wrap:wrap;
+        text-wrap: wrap;
     }
-    .rightSide
-    {
+
+    .rightSide {
         flex-wrap: wrap;
-        flex:0 0 45%;
+        flex: 0 0 45%;
         font-size: 19.7px;
     }
-    .intro
-    {
+
+    .intro {
         align-items: center;
         flex-wrap: wrap;
-        flex:0 0 70rem;
-        min-width:300px;
-        min-height: 70px;
+        flex: 0 0 50rem;
+        width: 87vw;
+        height: auto;
     }
-    .introcomment{      
+
+    .introcomment {
         text-align: center;
-        font-size: 60px;
+        font-size: 40px;
         width: auto;
     }
-    img{
-        width:350px;
-        height:350px;
+
+    img {
+        width: 350px;
+        height: 350px;
+    }
+    .SkillHead
+    {
+        width:86vw;
+        height:auto;
+        row-gap: 30px;
+    }
+    .SkillSection
+    {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width:75vw;
+        height:auto;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .SkillSection .skls
+    {
+        width: 40vh;
+        height:45vh;
     }
 }
