@@ -79,7 +79,6 @@ nav {
 }
 .intro {
     display: flex;
-    row-gap: 17px;
     padding: 2vw;
     width: 92vw;
     height: 26vw;
@@ -88,25 +87,83 @@ nav {
     background: hsl(240, 3%, 15%);
     justify-content: space-evenly;
 }
-
 .introcomment {
     display: flex;
+    padding:9px;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     font-family: "Exo 2", sans-serif;
     font-weight: 500;
-    font-size: 3.2vw;
+    font-size: 1.7vw;
     text-align: start;
-    color: hsl(240, 1%, 62%);
-    row-gap: 3vw;
+    color: hsl(240, 4%, 48%);
+}
+.edu
+{
+    width: 23vw;
+    padding:11px;
+    height:6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 10px;
+    background: hsl(0, 0%, 23%);
+    box-shadow: 0px 0px 2px grey;
+    border-radius: 25px;
+    position: relative;
+}
+.edu img
+{
+    width:25px;
+    height: 25px;
+    column-gap:5px;
+
+}
+.educontent
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    width:auto;
+    height:auto;
+}
+.commentedu
+{
+    display: flex;
+    flex-direction: column;
+    width:60vw;
+    height:10vh;
+    row-gap: 21px;
+}
+.education
+{
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+    row-gap:35px;
+}
+.edu:last-child
+{
+    color: rgb(121, 121, 121);
+    display: flex;
 }
 
-img {
+.scl,.clg
+{
+    font-size: 1.1rem;
+    color: rgb(130, 130, 130);
+}
+.eduhead
+{
+    display: flex;
+    align-items: center;
+    column-gap: 2vw;
+}
+img{
     width: 25vw;
     height: 25vw;
     border-radius: 40px;
 }
-
 .SkillHead {
     padding: 2vw;
     border-radius: 25px;
@@ -120,7 +177,6 @@ img {
     background: hsl(240, 3%, 15%);
     box-shadow: 0px 0px 4px rgb(176, 176, 176);
 }
-
 .SkillSection {
     display: flex;
     padding: 1.5vw;
@@ -152,7 +208,9 @@ img {
 }
 .name,
 .carrier {
-    color: rgb(136, 107, 69);
+    color: rgb(182, 178, 174);
+    font-weight: 400;
+    font-size: 30px;
 }
 .Skills,.head,.language{
     font-size: 28px;
@@ -164,7 +222,12 @@ img {
 {
     font-size: 24px;
 }
-
+.namel
+{
+    color: rgb(182, 178, 174);
+    font-weight: 400;
+    font-size: 1rem;
+}
 @media(max-width:900px) {
     nav {
         width: 86vw;
@@ -192,7 +255,7 @@ img {
 
     .introcomment {
         text-align: center;
-        font-size: 40px;
+        font-size: 23px;
         width: auto;
     }
 
